@@ -3,273 +3,249 @@
 #include <stdlib.h>
 
 void main() {
-    // Day 3rd. Lecture
-    // int a;
-    // printf("数値を入力: ");
-    // scanf("%d", &a);
-    // if (a > 0) {
-    //     printf("入力した値は、正の数です。\n");
-    // } else {
-    //     printf("入力した値は、正の数ではありません。\n");
+    // // Day 4th. Lecture
+    // int i;
+    // for (i = 1; i <= 5; i++) {
+    //     printf("%d", i);
     // }
+    // printf("\n");
 
-    // int num;
-    // printf("1-3の値を入力してください: ");
-    // scanf("%d", &num);
-    // if (num == 1) {
-    //     printf("one\n");
-    // } else if(num == 2) {
-    //     printf("two\n");
-    // } else if(num == 3) {
-    //     printf("three\n");
-    // } else {
-    //     printf("不適切な値です。\n");
-    // }
-
-    // int dice;
-    // printf("1から6の数値を入力してください: ");
-    // scanf("%d", &dice);
-    // if (1 <= dice && dice <= 6) {
-    //     if (dice == 2 || dice == 4 || dice == 6) {
-    //         printf("丁です\n");
-    //     } else {
-    //         printf("半です\n");
+    // int j, k;
+    // for (j = 1; j <= 2; j++) {
+    //     for (k = 1; k <= 3; k++) {
+    //         printf("%d+%d=%d ", j, k, j+k);
     //     }
-    // } else {
-    //     printf("範囲外の数値です。\n");
+    //     printf("\n");
     // }
 
-    // int num2;
-    // printf("1-3の値を入力してください");
-    // scanf("%d", &num2);
-    // switch(num2) {
-    //     case 1:
-    //         printf("one\n");
-    //         break;
-    //     case 2:
-    //         printf("two\n");
-    //         break;
-    //     case 3:
-    //         printf("three\n");
-    //         break;
-    //     default:
-    //         printf("不適切な値です。\n");
-    //         break;
+    // int l = 0;
+    // while (l <= 5) {
+    //     printf("%d ", l);
+    //     l++;
     // }
+    // printf("\n");
 
-    // Day 3rd. Exercise
-    printf("3-1. ");
-    int a;
-    printf("数値を入力してください: ");
-    scanf("%d", &a);
-    if (a >= 5) {
-        printf("5以上です\n");
-    }
+    // int m = 0;
+    // do {
+    //     printf("%d ", m);
+    //     m++;
+    // } while (m <= 5);
+    // printf("\n");
 
-    printf("3-2. ");
-    int b;
-    printf("数値を入力してください: ");
-    scanf("%d", &b);
-    if (b != 1) {
-        printf("1ではありません\n");
-    }
+    // int n, num;
+    // printf("回数を入力");
+    // scanf("%d", &num);
+    // printf("whileで実行\n");
+    // n = 1;
+    // while(n <= num) {
+    //     printf("*");
+    //     n++;
+    // }
+    // printf("\n");
+    // printf("do-whileで実行\n");
+    // n = 1;
+    // do {
+    //     printf("*");
+    //     n++;
+    // } while (n <= num);
+    // printf("\n");
 
-    printf("3-3. ");
-    int c;
-    printf("数値を入力してください: ");
-    scanf("%d", &c);
-    if (c < 50) {
-        printf("50未満です\n");
-    }
+    // int number;
+    // printf("負の値でループから抜けます。\n");
+    // while (1) {
+    //     printf("数値を入力\n");
+    //     scanf("%d", &number);
+    //     if (number < 0) {
+    //         break;
+    //     }
+    // }
+    // printf("終了\n");
 
-    printf("3-4. ");
-    int d;
-    printf("数値を入力してください: ");
-    scanf("%d", &d);
-    if (d <= 10 || d >= 90) {
-        printf("10以下か90以上の値です\n");
-    }
-
-    printf("3-5. ");
-    int e;
-    printf("数値を入力してください: ");
-    scanf("%d", &e);
-    if (e >= 20 && e < 80) {
-        printf("20以上80未満です \n");
-    }
-
-    printf("3-6. ");
-    int n;
+    // Day 4th. Exercise
     srand((unsigned)time(NULL));
-    n = rand() % 6 + 1;
-    printf("数値: %d\n", n);
-    if (n >= 3) {
-        printf("3以上です\n");
-    }
 
-    printf("3-7. ");
-    int m;
-    srand((unsigned)time(NULL));
-    m = rand() % 10 + 1;
-    printf("数値: %d\n", m);
-    if (m >= 5) {
-        printf("5以上です\n");
-    } else {
-        printf("5未満です\n");
+    printf("4-1. ");
+    int j;
+    j = rand() % 10 + 1;
+    printf("数: %d", j);
+    for (int i = 0; i < j; i++) {
+        printf("■ ");
     }
+    printf("\n");
 
-    printf("3-8. ");
-    int o;
-    srand((unsigned)time(NULL));
-    o = rand() % 10 + 1;
-    printf("数値: %d\n", o);
-    if (o != 1) {
-        printf("1ではありません\n");
-    } else {
-        printf("1です\n");
+    printf("4-2. ");
+    int k, l;
+    k = 0;
+    l = rand() % 10 + 1;
+    printf("数: %d", l);
+    while (k < l) {
+        printf("■ ");
+        k++;
     }
+    printf("\n");
 
-    printf("3-9. ");
-    int p;
-    srand((unsigned)time(NULL));
-    p = rand() % 100 + 1;
-    printf("数値: %d\n", p);
-    if (p < 50) {
-        printf("50未満です\n");
-    } else {
-        printf("50以上です\n");
+    printf("4-3. ");
+    int m, n;
+    m = 0;
+    n = rand() % 10 + 1;
+    printf("数: %d", n);
+    do {
+        printf("■ ");
+        m++;
+    } while (m < n);
+    printf("\n");
+
+    printf("4-4. ");
+    int a = 0;
+    while (a <= 3) {
+        printf("a = %d ", a);
+        a++;
     }
+    printf("\n");
 
-    printf("3-10. ");
-    int q;
-    srand((unsigned)time(NULL));
-    q = rand() % 100 + 1;
-    printf("数値: %d\n", q);
-    if (q <= 10 && q >= 90) {
-        printf("10以下か90以上です\n");
-    } else {
-        printf("10より大きく90未満です\n");
+    printf("4-5. ");
+    for (int b = 0; b <= 3; b++) {
+        printf("a = %d ", b);
     }
+    printf("\n");
 
-    printf("3-11. ");
-    int r;
-    srand((unsigned)time(NULL));
-    r = rand() % 100 + 1;
-    printf("数値: %d\n", r);
-    if (r >= 20 && r < 80) {
-        printf("20以上80未満です\n");
-    } else {
-        printf("20未満か、80以上です\n");
+    printf("4-6. ");
+    int c = 3;
+    while (c >= 0) {
+        printf("a = %d ", c);
+        c--;
     }
+    printf("\n");
 
-    printf("3-12. ");
-    int s;
-    srand((unsigned)time(NULL));
-    s = rand() % 10 - 10;
-    printf("数値: %d\n", s);
-    if (s < 0) {
-        printf("負の値です\n");
-    } else if (s > 0) {
-        printf("正の値です\n");
-    } else {
-        printf("0です\n");
+    printf("4-7. ");
+    for (int d = 3; d >= 0; d--) {
+        printf("a = %d ", d);
     }
+    printf("\n");
 
-    printf("3-13. ");
-    int t;
-    srand((unsigned)time(NULL));
-    t = rand() % 3 + 1;
-    printf("数値: %d\n", t);
-    switch (t) {
-        case 1:
-            printf("グー\n");
+    printf("4-8. ");
+    while (1) {
+        int o;
+        o = rand() % 10 + 1;
+        printf("%d ", o);
+        if (o == 10) {
             break;
-        case 2:
-            printf("パー\n");
+        }
+    }
+    printf("終了します\n");
+
+    printf("4-9. ");
+    while (1) {
+        int p;
+        p = rand() % 100 + 1;
+        printf("%d ", p);
+        if (p % 10 == 0) {
             break;
-        case 3:
-            printf("チョキ\n");
-            break;
+        }
     }
+    printf("終了します\n");
 
-    printf("3-14. ");
-    int u, v;
-    srand((unsigned)time(NULL));
-    u = rand() % 10 + 1;
-    v = rand() % 10 + 1;
-    printf("a: %d ", u);
-    printf("b: %d\n", v);
-    if (u > v) {
-        printf("aの方が大きいです\n");
-    } else if (u < v) {
-        printf("bの方が大きいです\n");
+    printf("4-10. ");
+    for (int q = 0; q < 5; q++) {
+        printf("%d ", rand() % 100 + 1);
+    }
+    printf("\n");
+
+    printf("4-11. ");
+    int max = 0;
+    for (int r = 0; r < 5; r++) {
+        int s = rand() % 100 + 1;
+        printf("%d ", s);
+        if (s > max) {
+            max = s;
+        }
+    }
+    printf("最大値: %d\n", max);
+
+    printf("4-12. ");
+    int min = 100;
+    for (int t = 0; t < 5; t++) {
+        int u = rand() % 100 + 1;
+        printf("%d ", u);
+        if (u < min) {
+            min = u;
+        }
+    }
+    printf("最小値: %d\n", min);
+
+    printf("4-13. ");
+    int v = rand() % 10 + 1;
+    if (v >= 5) {
+        printf("%d: ", v);
+        for (int tmp = 0; tmp < v; tmp++) {
+            printf("★ ");
+        }
+        printf("\n");
     } else {
-        printf("等しいです\n");
+        printf("発生した数値: %d\n", v);
     }
 
-    printf("3-15. ");
-    int w;
-    srand((unsigned)time(NULL));
-    w = rand() % 100 + 1;
-    printf("点数: %d\n", w);
-    if (w >= 80) {
-        printf("優\n");
-    } else if (w < 80 && w >= 70) {
-        printf("良\n");
-    } else if (w < 70 && w >= 60) {
-        printf("可\n");
+    printf("4-14. ");
+    int w = rand() % 10 + 1;
+    if (w % 2 == 0) {
+        printf("%d: ", w);
+        for (int tmp2 = 0; tmp2 < w; tmp2++) {
+            printf("★ ");
+        }
+        printf("\n");
     } else {
-        printf("不可\n");
+        printf("%d: ", w);
+        for (int tmp2 = 0; tmp2 < w; tmp2++) {
+            printf("☆ ");
+        }
+        printf("\n");
     }
 
-    printf("3-16. ");
-    int x;
-    srand((unsigned)time(NULL));
-    x = rand() % 100 + 1;
-    printf("%d\n", x);
-    if (x % 2 == 0 && x % 3 == 0) {
-        printf("2と3の公倍数です\n");
-    } else if (x % 2 == 0) {
-        printf("2の倍数です\n");
-    } else if (x % 3 == 0) {
-        printf("3の倍数です\n");
+    printf("4-15.\n");
+    for (int tmp3 = 1; tmp3 <= 100; tmp3++) {
+        printf("%d ", tmp3);
+        if (tmp3 % 10 == 0) {
+            printf("\n");
+        }
     }
 
-    printf("3-17. ");
-    int y;
-    srand((unsigned)time(NULL));
-    y = rand() % 100 + 1;
-    printf("%d\n", y);
-    if (y <= 50 && y % 2 == 0) {
-        printf("50以下の偶数です\n");
-    } else if (y <= 50) {
-        printf("50以下です\n");
-    } else if (y % 2 == 0) {
-        printf("偶数です\n");
+    printf("4-16.\n");
+    for(int tmp4 = 1; tmp4 <= 9; tmp4++) {
+        for (int tmp5 = 1; tmp5 <= 9; tmp5++) {
+            printf("%d * %d = %d", tmp4, tmp5, tmp4 * tmp5);
+            if (tmp5 == 9) {
+                printf("\n");
+            } else {
+                printf(" | ");
+            }
+        }
     }
 
-    printf("3-18. ");
-    int z;
-    srand((unsigned)time(NULL));
-    z = rand() % 35 - 10;
-    printf("摂氏%d度\n", z);
-    if (z >= 30) {
-        printf("真夏日です\n");
-    } else if (z >= 25 && z < 30) {
-        printf("夏日です\n");
-    } else if (z < 0) {
-        printf("真冬日です\n");
+    printf("4-17.\n");
+    for (int tmp6 = 0; tmp6 < 10; tmp6++) {
+        for (int tmp7 = 0; tmp7 < 10; tmp7++) {
+            if (tmp6 >= tmp7) {
+                printf("■ ");
+            } else {
+                printf("□ ");
+            }
+            if (tmp7 == 9) {
+                printf("\n");
+            }
+        }
     }
 
-    printf("3-19. ");
-    int year;
-    printf("西暦を入力してください: ");
-    scanf("%d", &year);
-    if (year % 400 == 0) {
-        printf("閏年です\n");
-    } else if (year % 4 == 0 && year % 100 != 0) {
-        printf("閏年です\n");
-    } else {
-        printf("閏年ではありません\n");
+    printf("4-18.\n");
+    for (int tmp8 = 0; tmp8 < 10; tmp8++) {
+        for (int tmp9 = 0; tmp9 < 10; tmp9++) {
+            if (tmp8 == tmp9) {
+                printf("□ ");
+            } else {
+                printf("■ ");
+            }
+            if (tmp9 == 9) {
+                printf("\n");
+            }
+        }
     }
 }
